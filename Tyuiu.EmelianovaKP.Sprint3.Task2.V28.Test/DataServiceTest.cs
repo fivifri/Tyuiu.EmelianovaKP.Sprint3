@@ -13,7 +13,7 @@ namespace Tyuiu.EmelianovaKP.Sprint3.Task2.V28.Test
         {
             DataService ds = new DataService();
 
-            Assert.AreEqual(-15.642, ds.GetSumSeries(9));
+            Assert.AreEqual(-15.642, ds.GetSumSeries(1.8, 1, 9));
         }
     }
 }
