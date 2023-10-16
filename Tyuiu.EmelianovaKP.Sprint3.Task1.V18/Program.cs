@@ -31,15 +31,19 @@ namespace Tyuiu.EmelianovaKP.Sprint3.Task1.V18
 
             DataService ds = new DataService();
 
-            double value = 15;
-            Console.WriteLine("value = 1 to " + value);
+            double x = 0.25;
+            int startValue = 1;
+            int endValue = 15;
+            Console.WriteLine("Переменная X = " + x);
+            Console.WriteLine("Старт шага = " + startValue);
+            Console.WriteLine("Конец шага = " + endValue);
 
             Console.WriteLine();
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
-            Console.WriteLine(ds.GetMultiplySeries(value));
+            Console.WriteLine("Сумма ряда " + ds.GetMultiplySeries(x, startValue, endValue));
 
             Console.ReadKey();
         }

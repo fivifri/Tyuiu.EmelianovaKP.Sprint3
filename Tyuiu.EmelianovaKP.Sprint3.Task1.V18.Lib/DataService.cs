@@ -11,13 +11,13 @@ namespace Tyuiu.EmelianovaKP.Sprint3.Task1.V18.Lib
 {
     public class DataService : ISprint3Task1V18
     {
-        public double GetMultiplySeries(double value)
+        public double GetMultiplySeries(double value, int startValue, int stopValue)
         {
             double sum = 0;
 
-            while (value > 0)
+            while (stopValue >= startValue)
             {
-                sum += Math.Sin(value--) * Math.Pow(0.25, 2);
+                sum += Math.Sin(stopValue--) * Math.Pow(value, 2);
             }
 
             return Math.Round(sum, 3);
