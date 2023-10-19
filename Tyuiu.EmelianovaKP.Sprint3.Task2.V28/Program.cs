@@ -31,10 +31,8 @@ namespace Tyuiu.EmelianovaKP.Sprint3.Task2.V28
 
             DataService ds = new DataService();
 
-            double x = 1.8;
             int startValue = 1;
             int endValue = 9;
-            Console.WriteLine("Переменная X = " + x);
             Console.WriteLine("Старт шага = " + startValue);
             Console.WriteLine("Конец шага = " + endValue);
 
@@ -43,7 +41,7 @@ namespace Tyuiu.EmelianovaKP.Sprint3.Task2.V28
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
-            Console.WriteLine("Сумма ряда " + ds.GetSumSeries(x, startValue, endValue));
+            Console.WriteLine("Сумма ряда " + ds.GetMultiplySeries(startValue, endValue));
 
             Console.ReadKey();
         }
